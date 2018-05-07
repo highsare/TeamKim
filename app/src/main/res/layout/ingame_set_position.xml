@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Set Stone's aim!!"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <!--Pointable View here-->
+    <com.example.teamkim.ingame.SetPosition
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.teamkim.customview.NextButton
+        android:id="@+id/next_setPosition"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

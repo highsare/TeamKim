@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"/>
+
+
+    <com.example.teamkim.ingame.DefaultField
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team KIM : 0"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1_score"
+            android:text="Team FUJ : 0"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/game_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/player1_score"
+            android:text="1 END / 1 DRAW"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <com.example.teamkim.customview.NextButton
+        android:id="@+id/next_default"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

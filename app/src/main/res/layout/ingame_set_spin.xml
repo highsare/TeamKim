@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ice"/>
+
+    <!--Make it PopUpView after-->
+
+    <!--Draggable View Here-->
+    <com.example.teamkim.ingame.SpinField
+        android:id="@+id/drag_spin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Set Stone's Spin!!"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+    <!--Example-->
+    <ImageView
+        android:id="@+id/stone_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="400dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/red_stone"/>
+
+    <com.example.teamkim.customview.NextButton
+        android:id="@+id/next_setSpin"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
